@@ -35,6 +35,7 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-align: center;
 }
 
 #app {
@@ -108,7 +109,7 @@ button:focus-visible {
 }
 #converterContainer {
   width: 50vw;
-  height: 45vh;
+  max-height: 80vh;
   margin: 0 auto;
   padding: 3rem;
   display:flex; 
@@ -136,4 +137,54 @@ button:focus-visible {
 #copyBtn {
   max-height: 3rem;
   align-self: center;
+}
+
+/* Media Rules */
+
+@media screen and (max-width:1300px) {
+  h1 {
+    font-size: 2.75em;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width:900px) {
+  h1 {
+    font-size: 2.25em;
+  }
+  /* #converterContainer {
+    
+  } */
+  #inputGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #convertBtn {
+    margin-top: 1.5rem;
+    width: 200px;
+  }
+  #resultGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #result {
+    text-align: center;
+  }
+  #copyBtn {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    margin-top: 1.5em;
+    font-size: 1.5em;
+  }
 }

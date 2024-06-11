@@ -19,5 +19,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["phonetic-conversion/src"]
+  "include": ["./src"],
+  "exclude": []
 }
